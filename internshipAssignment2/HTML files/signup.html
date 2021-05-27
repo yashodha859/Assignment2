@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:/Users/User/yashu/internshipAssignment2/CSS files/signupAndLogin.css">
+    <script src="C:/Users/User/yashu/internshipAssignment2/JS file/log.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="full-page">
+        <div class="form-box">
+            <div class='heading-box'>
+
+                <button type='button' class='heading'>Contact Book</button>
+
+            </div>
+
+
+            <form id='register' class='input-group-register' name="myForm" method="POST"
+                onsubmit="return validateForm()" action="login.html">
+
+                <input type="email" placeholder="email id" class='input-field' id="email" name="email">
+                <input type="password" placeholder="password" id="password" class='input-field' name="pass">
+                <input type="submit" name="register" class='submit-btn' value="register" />
+                <div class="al">
+                    <p class="message">Already Registerd? <a href="login.html" class="login">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+</html>

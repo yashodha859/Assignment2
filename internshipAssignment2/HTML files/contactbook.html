@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:/Users/User/yashu/internshipAssignment2/CSS files/contactbook.css">
+    <script src="C:/Users/User/yashu/internshipAssignment2/JS file/log.js"></script>
+</head>
+
+<body>
+
+    <table id="table" class="content-table">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>PHONE NUMBER</th>
+                <th>PLACE</th>
+            </tr>
+        <tbody>
+
+        </tbody>
+        </thead>
+
+
+    </table>
+    <a href="C:/Users/User/yashu/internshipAssignment2/HTML files/addcontact.html"><button id="add"> add contact
+        </button> </a>
+    <a href="login.html"><button id="logout"> log out </button></a>
+
+    <script>
+        var name;
+        var phn;
+        var place;
+        var id1;
+        var table = document.getElementById("table");
+        contact = JSON.parse(
+            localStorage.getItem("list : " + sessionStorage.getItem("loginEmail"))
+        );
+
+        //if(contact.length === 0) { document.getElementById("noContact").innerHTML = "No contacts to display";}
+        for (var i = 0; i < contact.length; i++) {
+            console.log(contact[i].name); let row = `<tr>
+                        <td id = "id" style="display:none;"">${contact[i].id1}</td>
+                        <td>${contact[i].name}</td>
+                        <td>${contact[i].phn}</td>
+                        <td>${contact[i].place}</td>
+                        <td><form onsubmit="event.preventDefault(); remove('${contact[i].id1}')">
+                                <input class = "tableBtn" type="submit" value="Delete"  />
+                              </form>
+                        </td>
+                        <td ><form onsubmit=" event.preventDefault(); loadNewDoc('${contact[i].id1}','${contact[i].name}','${contact[i].phn}','${contact[i].place}')">
+                                <input class = "tableBtn" type="submit" value="Edit"/>
+                              </form>
+                        </td>
+                        
+                  </tr>`;
+
+
+            table.innerHTML += row;
+        }
+
+    </script>
+</body>
+
+</html>

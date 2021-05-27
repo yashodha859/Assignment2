@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="C:/Users/User/yashu/internshipAssignment2/JS file/log.js"></script>
+  <link rel="stylesheet" href="C:/Users/User/yashu/internshipAssignment2/CSS files/addcontact.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <script>
+    window.onload = function (event) {
+      getparas(window.location.href);
+    };
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class=full-page>
+    <div class="form-box">
+      <form onsubmit="event.preventDefault(); newOrExist()" class='input-group-register'>
+
+        <label for="name"> NAME:</label>
+        <span><input type="text" id='name' name="name" class='input-field' value="" /></span>
+        <label for="name">PHN:</label>
+        <span><input type="text" id='phn' name="phn" class='input-field' value="" /></span>
+        <label for="name">PLACE:</label>
+        <span><input type="text" id='place' name="place" class='input-field' value="" /></span>
+        <!-- <button id="submit" onclick="addData()">submit</button>-->
+        <input type="submit" id="submit" value="add" class='submit-btn' />
+      </form>
+
+    </div>
+    <a href="C:/Users/User/yashu/internshipAssignment2/HTML files/login.html"> <button id="logout"> log out
+      </button></a>
+  </div>
+
+</html>
+</body>
+
+</html>

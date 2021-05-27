@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+    }
+    .full-page{
+        height:100%;
+        width:100%;
+      
+       background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('C:/Users/User/yashu/i1.png');
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        
+    }
+    .input-group-register
+    {
+        top: 120px;
+        position:absolute;
+        width:280px;
+        transition:.5s;
+        display:inline;
+        color:#F3C693;
+    }
+   .input-field
+    {
+        width: 100%;
+     text-align: center;
+        margin-left: 4px;
+        border-left:0;
+        border-top:0;
+        border-right:0;
+        float: right;
+        outline:none;
+        background: transparent;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      color:#F3C693;  
+    }
+    .submit-btn
+    {
+        width: 75%;
+       float: right; 
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: 20px;
+        background: #F3C693;
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+        color: black;
+    }
+    .form-box
+    {
+        width:380px;
+        height:480px;
+        position:relative;
+        margin:2% auto;
+        background:rgba(0,0,0,0.3);
+        padding:10px;
+        overflow: hidden;
+    }
+    
+    input
+    {
+        color:white;
+        font-size: 18px;
+    }
+    .heading-box
+    {
+        width:220px;
+        margin:35px auto;
+        position:relative;
+        box-shadow: 0 0 20px 9px #ff61241f;
+        border-radius: 30px;
+    }
+    
+    label{
+        float:left;
+        width:60px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        color:#F3C693;
+      }
+      span{
+        display:block;
+        overflow:hidden;
+        padding:opx 4px opx 6px;
+       
+       
+      }
+      #logout{
+          top:5px;
+          right: 10px;
+          position: fixed;
+          background-color: grey;
+          border:none;
+          color:#F3C693;
+          cursor:pointer;
+          padding:15px 32px;
+          font-size: 16px;
+          border-radius: 5px;
+      }
